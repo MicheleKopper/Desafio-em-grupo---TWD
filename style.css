@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.nomes {
+    position: absolute;
+    left: 37%;
+    top: 85%;
+    margin-left: auto;
+    width: 700px;
+}
+
+
+.fundo {
+    position: absolute;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.personagens {
+    position: absolute;
+    left: 22%;
+    margin-left: auto;
+    top: 4%;
+    width: 1600px;
+    display: flex;
+    justify-content: center;
+    animation: divPersonagens 8s infinite;
+}
+
+@keyframes divPersonagens {
+
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.sangue {
+    position: absolute;
+    left: 31%;
+    top: 66%;
+    margin-left: auto;
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.logo {
+    position: absolute;
+    top: 35%;
+    left: 68%;
+    right: 50%;
+    margin-left: auto;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.zumbi {
+    position: absolute;
+    left: 0%;
+    top: 60%;
+    width: 800px;
+    height: auto;
+    animation: divZumbi 10s infinite;
+}
+
+@keyframes divZumbi {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.5);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+.maoDireita {
+    position: absolute;
+    opacity: 0.8;
+    left: 85%;
+    top: 40%;
+    width: 400px;
+    height: auto;
+    animation: divMaoDireita 5s infinite;
+
+}
+
+@keyframes divMaoDireita {
+
+    0%, 10% {
+        transform: translateY(0) rotate(0deg);
+    }
+    10% {
+        transform: translateY(-50) rotate(45deg);
+    }
+    50% {
+        transform: translateY(0) rotate(-40deg);
+    }
+    0% {
+        transform: translateY(50px) rotate(0deg);
+    }
+
+
+}
+
+.maoEsquerda {
+    position: absolute;
+    opacity: 0.8;
+    left: 65%;
+    top: 95%;
+    width: 400px;
+    height: auto;
+    animation: divMaoEsquerda 10s infinite;
+}
+
+@keyframes divMaoEsquerda {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-700px);
+    }
+}
